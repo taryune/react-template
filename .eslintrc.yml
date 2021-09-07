@@ -17,13 +17,11 @@ parserOptions:
 plugins:
   - react
   - '@typescript-eslint'
+  - import
 settings:
   react:
     version: detect
 rules:
-  {
-    'no-use-before-define': 'off',
-    'import/no-unresolved': 'off',
-    'react/jsx-filename-extension':
-      [1, { 'extensions': ['.tsx', '.ts', '.json', 'yml'] }],
-  }
+  typescript-eslint/no-use-before-define: off
+  react/jsx-filename-extension:
+    [1, { 'extensions': ['.tsx', '.ts', '.json', 'yml'] }]
